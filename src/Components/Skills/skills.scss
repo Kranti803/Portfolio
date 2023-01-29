@@ -1,0 +1,37 @@
+.skills {
+  min-height: 100vh;
+  padding: 1rem;
+  overflow-x: hidden;
+  > h2 {
+    text-align: center;
+    font: 500 2rem $heading;
+    letter-spacing: 1px;
+    padding: 1.5rem 0;
+  }
+  > .skills_container {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 4rem 8rem;
+    justify-content: center;
+    > div {
+      border-radius: 100%;
+      transition: all 0.5s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      > p {
+        font: 500 1rem $text;
+      }
+      &:hover {
+        scale: 1.109;
+      }
+      > img {
+        height: 100px;
+        width: 100px;
+        padding: 1rem;
+      }
+    }
+  }
+}

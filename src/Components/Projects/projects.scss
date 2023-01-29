@@ -1,0 +1,107 @@
+.projects {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  > h2 {
+    font: 500 2rem $heading;
+    text-align: center;
+    padding-top: 1rem;
+    letter-spacing: 2px;
+  }
+  > .projects_category {
+    padding: 1.5rem 0;
+    > ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8rem;
+      > li {
+        font: 500 1.5rem $heading;
+        cursor: pointer;
+      }
+      .active {
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+  .projects_container {
+    padding: 1rem 0.5rem;
+    overflow-x: hidden;
+  }
+}
+
+// style of WebProjects and AppProjects components..
+
+.app_projects,
+.web_projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  > .projects_card {
+    width: 450px;
+    height: 250px;
+    transition: all .5s ease-in-out;
+    position: relative;
+    border-radius: 4px;
+
+    &:hover {
+      scale: 1.08;
+      >.overlay{
+        opacity: 1;
+        top: 50%;
+      }
+    }
+    > img {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+
+    }
+    >.overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      text-align: center;
+      opacity: 0;
+      transition: all .5s ease-in-out;
+      border-radius: 4px;
+      > h4 {
+        font: 600 2rem $heading;
+        padding: 1rem 0;
+      }
+      > p {
+        font: 400 1rem $text;
+        padding: 1rem 0;
+      }
+      > .overlay_details {
+        display: flex;
+        overflow-x: hidden;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 1rem;
+        > button {
+          border: none;
+          background-color: inherit;
+          transition: all .5s ease-in-out;
+          &:hover{
+            scale:1.2;
+          }
+          > a {
+            color: white;
+            font-size: 1.8rem;
+            
+          }
+        }
+      }
+    }
+  }
+}

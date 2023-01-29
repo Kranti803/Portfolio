@@ -1,0 +1,45 @@
+.about {
+  min-height: 50vh;
+  padding: 5rem 1rem;
+  margin-bottom: 1rem;
+  overflow-x: hidden;
+  > h2 {
+    text-align: center;
+    font: 500 2rem $heading;
+    letter-spacing: 1px;
+    padding-bottom: 2rem;
+  }
+  .about_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    > div:first-of-type {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > img {
+        width: 20rem;
+        height: 25rem;
+        border-radius: 4px;
+      }
+    }
+    > div:last-of-type {
+      width: 60%;
+      > h4 {
+        text-align: center;
+        font: 600 1.5rem $text;
+      }
+      >div>p{
+        text-align: center;
+        padding-top: 2rem;
+        font:600 1rem $text ;
+        letter-spacing: 1px;
+        line-height: 2rem;
+        padding-right:1rem;
+      }
+    }
+  }
+}

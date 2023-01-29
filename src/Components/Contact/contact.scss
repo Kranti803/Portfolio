@@ -1,0 +1,100 @@
+.contact {
+  min-height: 60vh;
+  margin-bottom: 1rem;
+  overflow-x: hidden;
+
+  > h2 {
+    text-align: center;
+    font: 500 2rem $heading;
+    letter-spacing: 1px;
+    padding: 2rem 0;
+  }
+  .contact_container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    > .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-bottom: 1rem;
+      > p {
+        font: 400 1.2rem $text;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        > svg {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    > .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        > div {
+          display: flex;
+          justify-content: center;
+          gap: 5px;
+          > input {
+            padding: 10px;
+            font-size: 16px;
+            font-family: $text;
+            border: 1px solid  black;
+            outline: none;
+            &::placeholder {
+              font: 400 0.8rem $text;
+            }
+          }
+        }
+        > input {
+          margin: 1rem 0;
+          width: 100%;
+          font-size: 16px;
+          padding: 10px;
+          outline: none;
+          border: 1px solid black;
+          font-family: $text;
+          &::placeholder {
+            font: 400 0.8rem $text;
+          }
+        }
+        > textarea {
+          resize: none;
+          padding: 1rem;
+          font-size: 1rem;
+          outline: none;
+          border: 1px solid black;
+          font-family: $text;
+          &::placeholder {
+            font: 400 0.8rem $text;
+          }
+        }
+        > button {
+          font: 400 1rem $text;
+          margin-top: 15px;
+          padding: 10px;
+          outline: none;
+          background-color: black;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          cursor: pointer;
+          > svg {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}

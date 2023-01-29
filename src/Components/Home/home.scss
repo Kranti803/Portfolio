@@ -1,0 +1,73 @@
+.home {
+  min-height:87vh;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+
+  .top {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    padding: 1.5rem 5rem;
+    overflow-x: hidden;
+    > div {
+      > h1 {
+        font: 5rem $heading;
+      }
+      > p {
+        font: 2rem $text;
+        margin-top: 1rem;
+      }
+      > aside {
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+        padding: 2.5rem 0;
+        > button {
+          padding: 0.6rem 1.5rem;
+          border: 1px solid black;
+          background: linear-gradient(to right, black 50%, white 50%);
+          background-position: right bottom;
+          background-size: 200% 100%;
+          transition: all 0.5s ease-out;
+          &:hover {
+            background-position: left bottom;
+            color: white;
+            > a {
+              color: white;
+            }
+          }
+          > a {
+            color: black;
+            font: 1rem $text;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    overflow-x: hidden;
+    >p{
+      font-size: larger;
+      font-family: $text;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    > div {
+      display: flex;
+      gap: 4rem;
+      margin: .5rem 1.5rem;
+      > svg {
+        font-size: 2.2rem;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          scale: 1.3;
+        }
+      }
+    }
+  }
+}

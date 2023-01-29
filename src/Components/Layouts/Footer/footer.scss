@@ -1,0 +1,11 @@
+footer {
+  border-top: 1px solid gray;
+  height: 10vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  > div > p {
+    padding: 0 2rem;
+    font: 500 1rem $heading;
+  }
+}

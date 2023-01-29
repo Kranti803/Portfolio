@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fauna+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  list-style: none;
+  scroll-padding-top: 80px;
+}
+
+
+
+$text: "Fauna One", serif;
+$heading: "Cinzel", serif;
+$logo: "Great Vibes", cursive;
+
+$bgColor: #2d3436;
+
+@import "../Components/Layouts/Header/header.scss";
+@import "../Components/Home/home.scss";
+@import "../Components/Projects/projects.scss";
+@import "../Components/Skills/skills.scss";
+@import "../Components/Layouts/Footer/footer.scss";
+@import "../Components/Contact/contact.scss";
+@import "../Components/About/about.scss";
+@import "mediaquery";
